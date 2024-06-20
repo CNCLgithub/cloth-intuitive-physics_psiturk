@@ -1,0 +1,77 @@
+<!--
+  <Instruct-4.html>
+
+  @2020-05-24
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="pragma" content="no-cache" />
+        <title>Instruct-6</title>
+    </head>
+    <body>
+        <!--container-instructions-->
+        <div id="container-instructions">
+            <h1 id="instr_header"> Cloth Examples </h1>
+            <div class="instructions" id="instruct">
+                <p id="toptext" style="color:black; font-family: 'Lato', sans-serif; font-size: 15pt">
+                    The cloth you will see in this experiment will not only vary in the <span style="color:blue"> mass </span>, but they can also have different <span style="color:red"> stiffness </span>. <br>
+                    Here on the left, you see an example of a very <span style="color:red">stiff</span> cloth. <br>
+                    On the right, you see an example of a a very <span style="color:red">soft</span> cloth.</br>
+                    Notice that the winds are identical in these two videos; the movements of the feather in the two videos are identical.
+                </p>
+
+
+
+                <!--moviescreen-->  
+                <tr><td><br/></td></tr>  
+
+               <!--  <table id="moviescreen" border="5" bordercolor="red" align="center"> -->
+                <table id="moviescreen" align="center">
+                    <tr>
+                        <th colspan="2"></th> 
+                    </tr>
+                    
+                    <tr>
+                        <th style="text-align:center"> Very <span style="color:red"> stiff </span> cloth </th>
+                        <th style="text-align:center"> Very <span style="color:red"> soft </span> cloth </th>
+                    </tr>
+
+                    <tr>
+                        <td style="width:300pt"> 
+                            <video id="thisvideo_left" style="float:center; width:98%" autoplay loop>
+                                <source src="/static/data/movies/wind_mass_1.0_bs_2.0_sh_2.0_st_2.0.mov" type="video/mp4" />
+                                <source src="/static/data/movies/wind_mass_1.0_bs_2.0_sh_2.0_st_2.0.ogg" type="video/ogg" />
+                                Your browser does not support HTML video.
+
+                                Your browser does not support HTML video.
+                            </video> </th><!--Left video-->
+
+                        <td style="width:300pt"> 
+                            <video id="thisvideo_right" style="float:center;width:98%" autoplay loop>
+                                <source src="/static/data/movies/wind_mass_1.0_bs_0.0078125_sh_0.0078125_st_0.0078125.mov" type="video/mp4" />
+                                <source src="/static/data/movies/wind_mass_1.0_bs_0.0078125_sh_0.0078125_st_0.0078125.ogg" type="video/ogg" />
+                            </video> </th><!--Right video--> 
+                    </tr>
+                </table>
+
+
+                 <table id="moviescreen" align="center">
+                    <tr>
+                        <th colspan="1"></th> 
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <br>
+                            <button type="button" id="continue_button" class="btn btn-primary btn-lg continue"> Continue </button>
+                        </th>
+                    </tr>
+                </table> <!--END moviescreen-->       
+
+
+            </div> <!--END container-instructions-->
+        </div>
+    </body>
+</html>

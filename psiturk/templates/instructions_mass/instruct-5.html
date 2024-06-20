@@ -1,0 +1,75 @@
+<!--
+  <Instruct-3.html>
+
+  @2020-05-24
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="pragma" content="no-cache" />
+        <title>Instruct-5</title>
+    </head>
+    <body>
+        <!--container-instructions-->
+        <div id="container-instructions">
+            <h1 id="instr_header"> Cloth Examples </h1>
+            <div class="instructions" id="instruct">
+                <p id="toptext" style="color:black; font-family: 'Lato', sans-serif; font-size: 15pt">
+                        Here on the left, you see a very <span style="color:blue"> light </span> cloth. A box is sliding down the ramp and colliding with it. The box you see in this scene configuration is of similar weight of a can of 12oz soda coke. During the whole experiment, the weight of the box will not change.<br>
+
+                        On the right, you see a very <span style="color:blue"> heavy </span> cloth draping on the floor. <br>
+                </p>
+                
+                <!--moviescreen-->  
+                <tr><td><br/></td></tr>  
+
+               <!--  <table id="moviescreen" border="5" bordercolor="red" align="center"> -->
+                <table id="moviescreen" align="center">
+                    <tr>
+                        <th colspan="2"></th> 
+                    </tr>
+                    
+                    <tr>
+                        <th style="text-align:center">Very <span style="color:blue"> light </span> cloth</th>
+                        <th style="text-align:center">Very <span style="color:blue"> heavy </span> cloth</th>
+                    </tr>
+
+                    <tr>
+                        <td style="width:300pt"> 
+                            <video id="thisvideo_left" style="float:center; width:98%" autoplay loop>
+                                <source src="/static/data/movies/ball_mass_4.0_bs_0.5_sh_0.5_st_0.5.mov" type="video/mp4" />
+                                <source src="/static/data/movies/ball_mass_4.0_bs_0.5_sh_0.5_st_0.5.ogg" type="video/ogg" />
+                                Your browser does not support HTML video.
+
+                                Your browser does not support HTML video.
+                            </video> </th><!--Left video-->
+
+                        <td style="width:300pt"> 
+                            <video id="thisvideo_right" style="float:center;width:98%" autoplay loop>
+                                <source src="/static/data/movies/drape_mass_0.25_bs_0.5_sh_0.5_st_0.5.mov" type="video/mp4" />
+                                <source src="/static/data/movies/drape_mass_0.25_bs_0.5_sh_0.5_st_0.5.ogg" type="video/ogg" />
+                            </video> </th><!--Right video--> 
+                    </tr>
+                </table>
+
+
+                 <table id="moviescreen" align="center">
+                    <tr>
+                        <th colspan="1"></th> 
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <br>
+                            <button type="button" id="continue_button" class="btn btn-primary btn-lg continue"> Continue </button>
+                        </th>
+                    </tr>
+                </table> <!--END moviescreen-->       
+          
+            </div> <!--END container-instructions-->
+        </div>
+    </body>
+</html>
+
+        

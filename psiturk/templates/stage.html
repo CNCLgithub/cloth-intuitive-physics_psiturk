@@ -1,0 +1,85 @@
+<!--
+  <stage.html>
+
+  @2020-05-24
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="pragma" content="no-cache" />
+        <title>Experiment</title>
+        <style>
+            video::-webkit-media-controls {visibility: hidden;}   /* Hide control */
+            video::-webkit-media-controls-enclosure {visibility: visible;}
+        </style>
+    </head> 
+    <body>
+        <!-- Full-container -->
+        <div id="full-container" class="hide_elements">
+            <br>
+            <!-- Movie Screen -->
+            <div id = "moviescreen">                  
+                <!--
+                <div class="row row1">
+                    <div style="margin-left:40%">
+                        <video id="thisvideo_mid" controls autoplay loop>
+                            <source src="${fmovnm_mid}" type="video/mp4" />
+                            <source src="${fmovnm_mid}" type="video/ogg">
+                            `Your browser does not support HTML5 mp4 video.</video>
+                    </div>
+                </div>;
+                    
+                    <div class="row row2">
+                        <div style="margin-left:30%">
+                            <video id="thisvideo_left" controls autoplay loop>
+                                <source src="${fmovnm_left}" type="video/mp4" />
+                                <source src="${fmovnm_left}" type="video/ogg">
+                                `Your browser does not support HTML5 mp4 video.</video>
+                        
+                            <video id="thisvideo_right" controls autoplay loop>
+                                <source src="${fmovnm_right}" type="video/mp4" />
+                                <source src="${fmovnm_right}" type="video/ogg">
+                                `Your browser does not support HTML5 mp4 video.</video>
+                        </div>
+                    </div>
+                -->              
+            </div>  <!-- END Movie Screen -->
+            <!-- Register -->
+            <div id="register" class="hide_elements">
+                <div id ="response_region">
+                    <div class="radio_option_container">
+                        <span id="qspan"></span>
+                        <form id="trialRes" style="margin: 0 auto;display: table">
+<!--                             <ul>
+                                <li id="left-choice">
+                                    <input id="choiceA" type="radio" name="clothchoice" value="1"/>
+                                    <div class="check"></div>
+                                    <label for="choiceA"><i>Left</i></label>
+                                </li>
+
+                                <li id="right-choice">
+                                    <input id="choiceB" type="radio"  name="clothchoice" value="-1"/>
+                                    <div class="check"></div>
+                                    <label for="choiceB"><i>Right</i></label>  
+                                </li>
+                            </ul> -->
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <div id="centerdiv">
+                    <button id="nextbutton" class="incenterdiv btn btn-success btn-lg" disabled>Next</button>
+                    <br>
+                    <span id="progress" class="incenterdiv" style="margin-top: 15px;">0/0</span>
+                    <br>
+                    <button id="reloadbutton" class="incenterdiv btn btn-success btn-med" style="display: none;">Reload Movie</button>
+                </div> 
+            </div>  <!-- END Register -->
+        </div>  <!-- END Full-container -->
+    </body>
+</html>
+
+
+
+
