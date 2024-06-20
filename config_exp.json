@@ -1,0 +1,39 @@
+{
+        "exp1": {
+                "stiffness_lst": ["0.0078125", "0.03125", "0.125", "0.5", "2.0"],
+                "mass_lst": ["0.25", "0.5", "1.0", "2.0", "4.0"],
+                "scene_lst": ["drape", "wind", "rotate", "ball"],
+                "extension": ".mov",
+                "exp_folder_root": "cloth-psiturk-",
+                "physics_matching_exp": {
+                        "stiffness": {
+                                "name": "stiffness",
+                                "target_phyc_prop": "stiffness",
+                                "target_phyc_idx": 4,
+                                "irlvt_phyc_prop": "mass",
+                                "irlvt_phyc_idx" : 2,
+                                "scene_idx": 0
+                        },
+                        "mass": {
+                                "name": "mass",
+                                "target_phyc_prop": "mass",
+                                "target_phyc_idx": 2,
+                                "irlvt_phyc_prop": "stiffness",
+                                "irlvt_phyc_idx" : 4,
+                                "scene_idx": 0
+                        }
+                },
+                "exp_condition": {
+                        "all_combinations": {
+                                "name": "all_combinations",
+                                "nblocks": 10,
+                                "trials_per_block": -1
+                        },
+                        "balance_difficulty": {
+                                "name": "balance_difficulty",
+                                "nblocks": 30,
+                                "trials_per_block": 100
+                        }
+                }
+        }
+}
