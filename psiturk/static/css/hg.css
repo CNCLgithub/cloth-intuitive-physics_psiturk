@@ -1,0 +1,107 @@
+#full-container {              /* Experiment page */
+    /*margin: 0 auto;*/
+    width: min(90vw, 150vmin);
+}
+
+
+#full-container-sm {           /* "Next" button in instruction page */
+    margin: 0 auto;
+    /*width: 162vmin;*/
+}
+
+#moviescreen {
+    text-align: center;
+}
+
+
+/*#slider_div {
+  width: 82vmin;
+}*/
+
+#register {
+    /*width: min(90vw, 150vmin);*/
+}
+
+
+#response_region{
+    background-color: white; 
+    margin: 0 auto;
+    align-self:center;
+    text-align:center
+}
+
+#qspan {
+    font-weight: bold;
+    font-size: 80%;
+}
+
+#centerdiv {
+    margin: 0 auto;
+    text-align: center;
+    /*padding-right: 5vmin;*/
+}
+
+
+#trialRes {
+    /*padding-left: 1.2vmin;*/
+}
+
+
+
+#lab-div {
+}
+#lab-right{
+    text-align: center;
+    width: 50%;
+    float: left;
+    font-size: 80%;
+}
+#lab-left{
+    text-align: center;
+    width: 50%;
+    float: left;
+    font-size: 80%;
+}
+
+
+
+
+.incenterdiv {
+    margin: 0 auto;
+}
+
+
+.hide_elements{
+    display: none !important;
+}
+
+
+.movieobj_loading {
+    border-style: none;
+    border-width: 1px;
+    border-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*.movieobj_ready {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vmin; 
+    height: 45vmin; 
+}*/
+
+/*.movieobj_sm {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 162vmin;
+    height: 45vmin;
+}*/
+
+
+

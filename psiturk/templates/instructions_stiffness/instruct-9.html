@@ -1,0 +1,125 @@
+<!--
+  <quiz.html>
+
+  @2020-05-24
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="pragma" content="no-cache" />
+        <title>Instruct-9</title>
+    </head>
+    <body>
+
+        <div id="container-instructions">
+            <h1 id="instr_header"> Task </h1>
+            <div class="instructions" id="instruct">
+                <div class="well">
+                        <p id="toptext" style="color:black;">
+                        Here is a practice trial. Your task is to match the stiffness of the center top cloth to one of the bottom two cloth.<br> Please click "left" or "right" to indicate your answer.</br>
+                        </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--WRAPPER-->
+        <div id="wrapper" style="width: 162vmin;">
+                <div class="questionnaire">
+                   <!--moviescreen-->  
+                    <tr><td><br/></td></tr>  
+
+                       <!--  <table id="moviescreen" border="5" bordercolor="red" align="center"> -->
+
+                    <div style="margin-right:700px;">
+
+                        <table id="moviescreen" align="center">
+                            <tr>
+                                <th colspan="1"></th> 
+                            </tr>
+
+                            <tr>
+                                <td style="width:150pt"> 
+                                    <video id="thisvideo_left" style="float:center; width:98%" autoplay loop>
+                                        <source src="/static/data/movies/ball_mass_1.0_bs_0.125_sh_0.125_st_0.125.mov" type="video/mp4" />
+                                        <source src="/static/data/movies/ball_mass_1.0_bs_0.125_sh_0.125_st_0.125.ogg" type="video/ogg" />
+                                        Your browser does not support HTML video.
+                                    </video> </th><!--Left video-->
+                            </tr>
+                        </table>
+
+
+
+                   
+                        <table id="moviescreen" align="center">
+                            <tr>
+                                <th colspan="2"></th> 
+                            </tr>
+
+                            <tr>
+                                <td style="width:150pt"> 
+                                    <video id="thisvideo_left" style="float:center; width:98%" autoplay loop>
+                                        <source src="/static/data/movies/rotate_mass_1.0_bs_2.0_sh_2.0_st_2.0.mov" type="video/mp4" />
+                                        <source src="/static/data/movies/rotate_mass_1.0_bs_2.0_sh_2.0_st_2.0.ogg" type="video/ogg" />
+                                        Your browser does not support HTML video.
+                                    </video> </th><!--Left video-->
+
+                                <td style="width:150pt"> 
+                                    <video id="thisvideo_right" style="float:center;width:98%" autoplay loop>
+                                        <source src="/static/data/movies/drape_mass_1.0_bs_0.125_sh_0.125_st_0.125.mov" type="video/mp4" />
+                                        <source src="/static/data/movies/drape_mass_1.0_bs_0.125_sh_0.125_st_0.125.ogg" type="video/ogg" />
+                                    </video> </th><!--Right video--> 
+                            </tr>
+                        </table>
+
+
+
+                        <!-- Register -->
+                        <div id="register">
+                            <h4> Which fabric, left or right, is more similar in its <span style="color:blue;"> stiffness </span>to the center? </h4>
+                            <div id ="response_region">
+                                <div class="radio_option_container">
+
+                                    <span id="qspan"></span>
+
+                                    <form id="trialRes" style="margin: 0 auto;display: table">
+                                        <ul>
+
+                                            <li id="left-choice"  class="showAnswerA">
+                                                <input id="choiceA" type="radio" name="clothchoice" value="1"/>
+                                                <div class="check"></div>
+                                                <label for="choiceA"><i>Left</i></label>
+                                            </li>
+
+                                            <li id="right-choice" class="showAnswerB">
+                                                <input id="choiceB" type="radio"  name="clothchoice" value="-1"/>
+                                                <div class="check"></div>
+                                                <label for="choiceB"><i>Right</i></label>  
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                            </div>
+                            <hr />
+
+                            <div id="centerdiv">
+
+                                <div id="answers" style="text-align-last: center"></div>
+
+<!--                                 <button type="button" id="continue_button" class="incenterdiv btn btn-success btn-lg">Next</button> -->
+                            <button type="button" id="nextbutton" class="incenterdiv btn btn-success btn-lg">
+                                Next 
+                                <span class="glyphicon glyphicon-arrow-right"></span>
+                            </button>
+                            </div> 
+                        </div>  <!-- END Register -->
+                    </div> 
+
+                    </div> <!--END CONTENT-->                
+                </div> <!--END LOGIN FORM-->
+            </div>
+        </div>
+    </body>
+</html>
+        

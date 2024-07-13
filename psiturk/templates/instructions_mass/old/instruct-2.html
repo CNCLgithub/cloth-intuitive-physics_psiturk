@@ -1,0 +1,51 @@
+<!--
+  <Instruct-2.html>
+
+  @2020-05-24
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="pragma" content="no-cache" />
+        <title>Instruct-2</title>
+    </head>
+    <body>
+        <!--container-instructions-->
+        <div id="container-instructions">
+            <h1 id="instr_header"> Cloth Examples </h1>
+            <div class="instructions" id="instruct">
+                <p id="toptext" style="color:darkred; font-family: 'Lato', sans-serif; font-size: 15pt">
+                        On the left shows a piece of very heavy cloth, and on the right shows a piece of very light cloth. <br> The two pieces of cloth are in different scene configurations.
+                </p>
+                
+                <!--moviescreen-->    
+                <table id="moviescreen">
+                    <tr>
+                    	<td> 
+                    		<video id="thisvideo_left" style="float:center; width:40%" autoplay loop>
+                                <source src="/static/data/movies/ball_b_0.01_m_10_ss_15.mov" type="video/mp4" />
+                                <source src="/static/data/movies/ball_b_0.01_m_10_ss_15.ogg" type="video/ogg" />
+                                Your browser does not support HTML video.
+                            </video> <!--Left video-->
+
+                            <video id="thisvideo_right" style="float:center;width:40%" autoplay loop>
+                                <source src="/static/data/movies/rotateTable_b_0.01_m_0.1_ss_15.mov" type="video/mp4" />
+                                <source src="/static/data/movies/rotateTable_b_0.01_m_0.1_ss_15.ogg" type="video/ogg" />
+                                Your browser does not support HTML video.
+                            </video> <!--Right video--> 
+                        </td> 
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <br>
+                            <button type="button" id="continue_button" class="btn btn-warning btn-lg continue"> Continue </button>
+                        </td>
+                    </tr>
+                </table> <!--END moviescreen-->             
+            </div> <!--END container-instructions-->
+        </div>
+    </body>
+</html>
+        

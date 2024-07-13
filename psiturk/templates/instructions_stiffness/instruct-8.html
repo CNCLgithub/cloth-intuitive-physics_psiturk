@@ -1,0 +1,93 @@
+<!--
+  <quiz.html>
+
+  @2020-05-24
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="pragma" content="no-cache" />
+        <title>Instruct-9</title>
+    </head>
+    <body>
+        <div id="container-instructions">
+            <h1 id="instr_header"> Task </h1>
+            <div class="instructions" id="instruct">
+                <div class="well">
+                <p id="toptext" style="color:black;">
+                        In each trial, you will see 3 cloth videos: one on the center top, and the other two at the bottom. <br>
+                        Your task is to match the stiffness of the center top cloth to one of the bottom two cloths.
+                </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--WRAPPER-->
+        <div id="wrapper" style="width: 162vmin;">
+            <!--LOGIN FORM-->
+            <div name="login-form" class="login-form">
+      
+                <div class="questionnaire">
+                    <!--moviescreen-->  
+                    <tr><td><br/></td></tr>  
+
+                       <!--  <table id="moviescreen" border="5" bordercolor="red" align="center"> -->
+
+                    <div style="margin-right:700px;">
+
+                        <table id="moviescreen" align="center">
+                            <tr>
+                                <th colspan="1"></th> 
+                            </tr>
+
+                            <tr>
+                                <td style="width:150pt"> 
+                                     <img src="/static/data/imgs/ball_mass_1.0_bs_0.125_sh_0.125_st_0.125.png" alt="middle top" style="float:center; width:98%">
+                                     </th><!--Left video-->
+                            </tr>
+                        </table>
+
+
+
+                   
+                        <table id="moviescreen" align="center">
+                            <tr>
+                                <th colspan="2"></th> 
+                            </tr>
+
+                            <tr>
+                                <td style="width:150pt"> 
+                                    <img src="/static/data/imgs/rotate_mass_1.0_bs_2.0_sh_2.0_st_2.0.png" alt="middle top" style="float:center; width:98%"></th><!--Left video-->
+
+                                <td style="width:150pt"> 
+                                     <img src="/static/data/imgs/drape_mass_1.0_bs_0.125_sh_0.125_st_0.125.png" alt="middle top" style="float:center; width:98%"></th><!--Right video--> 
+                            </tr>
+                        </table>
+
+
+                        <table id="moviescreen" align="center">
+                            <tr>
+                                <td>
+                                    <br>
+<!--                                     <button type="button" id="continue_button" class="btn btn-primary btn-lg continue"> Continue </button> -->
+                            <button type="button" id="nextbutton" class="incenterdiv btn btn-success btn-lg">
+                                Next 
+                                <span class="glyphicon glyphicon-arrow-right"></span>
+                            </button>
+                                </th>
+                            </tr>
+                        </table> 
+                    </div>    
+
+
+
+
+                    </div> <!--END CONTENT-->                
+                </div> <!--END LOGIN FORM-->
+            </div>
+        </div>
+    </body>
+</html>
+        

@@ -1,0 +1,83 @@
+<!--
+  <Instruct-2.html>
+
+  @2020-05-24
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="pragma" content="no-cache" />
+        <title>Instruct-2</title>
+    </head>
+    <body>
+        <!--container-instructions-->
+        <div id="container-instructions">
+            <h1 id="instr_header"> Instructions </h1>
+            <div class="instructions" id="instruct">
+                <div class="well">
+                <p id="toptext" style="color:black;">
+                    Throughout this experiment, you will see the cloth interacting with different types of external forces across 4 different scenarios, referred to as "Drape", "Rotate", "Wind", and "Box" scenarios. <br>
+                    You should judge cloth stiffness independently of the variations in the scene. <br>
+                    Below you can see the snapshots of the 4 different scenarios.
+                </p>
+                </div>
+
+                <!--moviescreen-->  
+                <table id="moviescreen" align="center">
+                    <tr>
+                        <th colspan="2"></th> 
+                    </tr>
+                    <tr>
+                        <th style="text-align:center">Drape</th>
+                        <th style="text-align:center">Rotate</th>
+                    </tr>
+
+                    <tr>
+                        <td style="width:160pt"> 
+                            <img class="square"  src="/static/data/imgs/drape.png" alt="drape" style="float:center; width:98%">
+                            </img> </th><!--Left video-->
+
+                        <td style="width:160pt"> 
+                            <img class="square" src="/static/data/imgs/rotate.png" alt="rotate" style="float:center; width:98%">
+                            </img> </th><!--Left video-->
+                    </tr>
+
+                    <tr><td><br/></td></tr>
+
+                    <tr>
+                        <th style="text-align:center">Wind</th>
+                        <th style="text-align:center">Box</th>
+                    </tr>
+                    <tr>
+                        <td style="width:160pt"> 
+                            <img class="square"  src="/static/data/imgs/wind.png" alt="leather" style="float:center; width:98%">
+                            </img> </th><!--Left video-->
+
+                        <td style="width:160pt"> 
+                            <img class="square" src="/static/data/imgs/box.png" alt="silk" style="float:center; width:98%">
+                            </img> </th><!--Left video-->
+                    </tr>
+
+                </table> <!--END moviescreen-->   
+
+                <table id="moviescreen" align="center">
+                    <tr>
+                        <th colspan="1"></th> 
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <br>
+<!--                             <button type="button" id="continue_button" class="btn btn-primary btn-lg continue"> Continue </button> -->
+                            <button type="button" id="nextbutton" class="incenterdiv btn btn-success btn-lg">
+                                Next 
+                                <span class="glyphicon glyphicon-arrow-right"></span>
+                            </button>
+                        </th>
+                    </tr>
+                </table> <!--END moviescreen-->            
+            </div> <!--END container-instructions-->
+        </div>
+    </body>
+</html>
