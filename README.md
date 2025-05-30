@@ -1,6 +1,6 @@
 # Cloth Psiturk
 
-This is the psiturk component of the cross-domain-cloth project
+This is the psiturk component of the "Computational models reveal that intuitive physics underlies visual processing of soft objects".
 
 ## Overview
 
